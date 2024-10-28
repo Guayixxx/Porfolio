@@ -2,8 +2,36 @@
 import BaseLayout from "@layouts/BaseLayout.astro";
 ---
 
-<BaseLayout title = "Projects" sideBarActiveItemID="projects">
-  <div>
-      <iframe src="/notebooks/SerieDeTiempo.html" width="1000px" height="790px"></iframe>
+<BaseLayout title="Projects" sideBarActiveItemID="projects" extraClass="lg:!max-w-[1100px]">
+  <div class="mb-6"> <!-- Espaciado inferior para separar la descripción del iframe -->
+    <h2 class="text-2xl font-bold mb-2">Análisis de Series Temporales: Demanda de Energía y Temperatura en Victoria, Australia (2014)</h2>
+    <p class="mb-4">Este proyecto se centra en el análisis de series temporales con el objetivo de explorar la relación entre la demanda de energía y la temperatura en el estado de Victoria, Australia, utilizando datos reales de 2014. A través de este análisis, se implementaron técnicas de visualización de datos y modelado de series temporales que revelaron patrones relevantes en la demanda energética.</p>
+
+    <h3 class="text-xl font-semibold">Objetivos y Actividades Principales:</h3>
+    <ul class="list-disc ml-5 mb-4">
+      <li><strong>Preparación de los Datos:</strong> Los datos se cargaron en un dataframe y se ajustaron los índices al formato temporal adecuado. Se utilizó el dataset <code>vic_elec.csv</code> para establecer la demanda energética y su relación con la temperatura ambiente en Victoria.</li>
+      <li><strong>Análisis Temporal:</strong> Se generó un nuevo conjunto de datos específico del año 2014 y se agregó la columna "Day_Type" para clasificar cada día de la semana como día laboral, fin de semana o festivo.</li>
+      <li><strong>Visualización:</strong> Se elaboraron gráficos de series temporales que muestran tanto la demanda de energía como la temperatura en distintos periodos del año.</li>
+      <li><strong>Análisis de Relaciones:</strong> Se exploró la posible correlación entre temperatura y demanda de energía a través de un diagrama de dispersión.</li>
+      <li><strong>Segmentación y Análisis Avanzado:</strong> Se segmentaron los datos por tipo de día, utilizando colores diferenciados para observar patrones de comportamiento de consumo.</li>
+      <li><strong>Matriz de Dispersión:</strong> Se analizó una matriz de dispersión para un segundo dataset (<code>us_change.csv</code>) para investigar relaciones entre variables económicas de Estados Unidos.</li>
+    </ul>
+
+    <h3 class="text-xl font-semibold">Tecnologías Utilizadas:</h3>
+    <ul class="list-disc ml-5 mb-4">
+      <li><strong>Python</strong> para manipulación y análisis de datos.</li>
+      <li><strong>Pandas</strong> para gestión de series temporales y clasificación de datos.</li>
+      <li><strong>Matplotlib</strong> y <strong>Seaborn</strong> para visualización de tendencias y diagramas de dispersión.</li>
+    </ul>
+
+    <h3 class="text-xl font-semibold">Conclusiones Principales:</h3>
+    <p class="mb-4">Se identificaron patrones específicos en la demanda energética según la temperatura y el tipo de día, destacándose picos de consumo en fines de semana y festivos.</p>
+
+    <h3 class="text-xl font-semibold">Aprendizajes Clave:</h3>
+    <p>Este proyecto proporcionó una valiosa experiencia en la gestión y visualización de series temporales, así como en el análisis de patrones de comportamiento en datos de gran volumen.</p>
+  </div>
+
+  <div class="rounded-lg shadow-lg overflow-hidden">
+    <iframe src="/notebooks/SerieDeTiempo.html" width="100%" height="790px"></iframe>
   </div>
 </BaseLayout>
