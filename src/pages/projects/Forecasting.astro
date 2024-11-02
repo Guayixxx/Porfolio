@@ -1,0 +1,45 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Forecasting" sideBarActiveItemID="projects" extraClass="lg:!max-w-[1100px]">
+  <div class="mb-6"> <!-- Espaciado inferior para separar la descripción del iframe -->
+    <h2 class="text-2xl font-bold mb-2">Análisis Económico y Modelado Predictivo de Series Temporales</h2>
+    <p class="mb-4">Este proyecto utiliza datos económicos globales para explorar el análisis de series temporales y ajustar modelos predictivos. A través de técnicas de regresión y evaluación de modelos, se examina la evolución del <em>GDP per capita</em> en países como Suecia y Suiza, y se analizan métricas como MSE y R² para seleccionar el mejor modelo.</p>
+
+    <h3 class="text-xl font-semibold">Objetivos y Actividades Principales:</h3>
+    <ul class="list-disc ml-5 mb-4">
+      <li><strong>Transformación de Datos:</strong> Carga de datos del archivo <code>global_economy.csv</code>, generación de la columna <code>GDP_per_capita</code> calculada dividiendo el <code>GDP</code> por la <code>Población</code> de cada país.</li>
+
+      <li><strong>Visualización de Series Temporales:</strong> Visualización de la serie temporal del <code>GDP_per_capita</code> para Suecia, permitiendo observar patrones y tendencias económicas.</li>
+
+      <li><strong>Modelo de Regresión Lineal:</strong> Ajuste de un modelo de regresión lineal para los datos de <code>GDP_per_capita</code> de Suecia, generando predicciones y evaluando la coherencia de los resultados obtenidos frente a datos históricos.</li>
+
+      <li><strong>Predicción y Diagnóstico de Residuales:</strong> Realización de una predicción del <code>GDP_per_capita</code> en Suiza para los próximos tres años mediante media móvil, y diagnóstico de residuales utilizando gráficos comunes en regresión como el histograma y la gráfica Q-Q.</li>
+
+      <li><strong>Evaluación de Modelos de Regresión:</strong> Estudio de las métricas MSE (Mean Squared Error) y R², comprendiendo su utilidad para evaluar el ajuste y precisión del modelo, y considerando la interpretación de valores de R² negativos.</li>
+
+      <li><strong>Modelos Predictivos para Series Temporales:</strong> Aplicación de diferentes estrategias predictivas en los datos de <code>Bricks</code> del archivo <code>aus_production.csv</code>, incluyendo modelos de promedio, último valor, y valores estacionales, así como ajustes con regresión lineal y polinomial.</li>
+
+      <li><strong>Comparación y Selección de Modelos:</strong> Evaluación de los modelos propuestos utilizando el MSE, los gráficos de diagnóstico de residuales, el R², y el intervalo de predicción para seleccionar el modelo más adecuado para las series temporales analizadas.</li>
+    </ul>
+
+    <h3 class="text-xl font-semibold">Tecnologías Utilizadas:</h3>
+    <ul class="list-disc ml-5 mb-4">
+      <li><strong>Python</strong> para manipulación y análisis de series temporales y modelado predictivo.</li>
+      <li><strong>Pandas</strong> para gestión de datos económicos y cálculo de métricas personalizadas.</li>
+      <li><strong>Statmodels</strong> para ajuste de modelos de regresión y diagnóstico de residuales.</li>
+      <li><strong>Matplotlib</strong> y <strong>Seaborn</strong> para visualización de tendencias y gráficos de diagnóstico en series temporales.</li>
+    </ul>
+
+    <h3 class="text-xl font-semibold">Conclusiones Principales:</h3>
+    <p class="mb-4">Se evaluaron y seleccionaron modelos predictivos efectivos para analizar datos económicos, destacando la importancia de la interpretación de los valores de MSE y R² para elegir modelos robustos. Este análisis proporcionó insights clave sobre el comportamiento económico de los países estudiados y sus tendencias.</p>
+
+    <h3 class="text-xl font-semibold">Aprendizajes Clave:</h3>
+    <p>El proyecto permitió adquirir habilidades en el análisis de series temporales económicas, el ajuste de modelos predictivos y el uso de diagnósticos de residuales para la evaluación de modelos de regresión. Estos conocimientos son fundamentales para el análisis de patrones y predicciones en datos económicos complejos.</p>
+  </div>
+
+  <div class="rounded-lg shadow-lg overflow-hidden">
+    <iframe src="/notebooks/Forecasting.html" width="100%" height="790px"></iframe>
+  </div>
+</BaseLayout>

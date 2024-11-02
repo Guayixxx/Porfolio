@@ -1,0 +1,35 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Componentes de una Serie de Tiempo" sideBarActiveItemID="projects" extraClass="lg:!max-w-[1100px]">
+  <div class="mb-6"> <!-- Espaciado inferior para separar la descripción del iframe -->
+    <h2 class="text-2xl font-bold mb-2">Análisis de Calidad del Aire: Comportamiento Estacional y Tendencias en PM2.5</h2>
+    <p class="mb-4">Este proyecto examina la calidad del aire mediante el análisis de datos de la columna de PM2.5 en una estación de monitoreo. A través de técnicas de series temporales, se identificaron patrones de comportamiento estacional y cíclico, así como tendencias relevantes en la concentración de partículas PM2.5.</p>
+
+    <h3 class="text-xl font-semibold">Objetivos y Actividades Principales:</h3>
+    <ul class="list-disc ml-5 mb-4">
+      <li><strong>Identificación de Patrones:</strong> Se investigó la presencia de comportamientos estacionales, cíclicos y tendencias en los datos de PM2.5 para comprender las fluctuaciones en la calidad del aire.</li>
+      <li><strong>Manejo de Valores Faltantes:</strong> Se evaluaron estrategias de imputación para asegurar la precisión en el análisis, tomando en cuenta los periodos estacionales y las variaciones diarias y semanales.</li>
+      <li><strong>Visualización Estacional:</strong> Se generaron gráficos estacionales con periodicidad semanal y diaria para observar patrones de concentración de PM2.5 y sus variaciones a lo largo del tiempo.</li>
+      <li><strong>Gráfico de Subseries:</strong> Se utilizó el gráfico "subseries()" para segmentar y analizar patrones específicos en intervalos de tiempo recurrentes, resaltando comportamientos únicos en cada periodo.</li>
+    </ul>
+
+    <h3 class="text-xl font-semibold">Tecnologías Utilizadas:</h3>
+    <ul class="list-disc ml-5 mb-4">
+      <li><strong>Python</strong> para manipulación y análisis de datos de calidad del aire.</li>
+      <li><strong>Pandas</strong> para la gestión y limpieza de datos, incluyendo el manejo de valores faltantes.</li>
+      <li><strong>Matplotlib</strong> y <strong>Seaborn</strong> para la visualización de patrones estacionales y el análisis de subseries.</li>
+    </ul>
+
+    <h3 class="text-xl font-semibold">Conclusiones Principales:</h3>
+    <p class="mb-4">Se observaron patrones estacionales y tendencias claras en los niveles de PM2.5, con variaciones significativas entre días de la semana y horarios específicos, proporcionando una visión detallada del comportamiento de la calidad del aire.</p>
+
+    <h3 class="text-xl font-semibold">Aprendizajes Clave:</h3>
+    <p>Este proyecto aportó experiencia en el análisis de patrones estacionales y en la selección de estrategias de imputación para series de datos ambientales, optimizando la comprensión de fluctuaciones en la calidad del aire.</p>
+  </div>
+
+  <div class="rounded-lg shadow-lg overflow-hidden">
+    <iframe src="/notebooks/ComponentesdeunaSeriedeTiempo.html" width="100%" height="790px"></iframe>
+  </div>
+</BaseLayout>

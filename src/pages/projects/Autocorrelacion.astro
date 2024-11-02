@@ -1,0 +1,38 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Autocorrelacion" sideBarActiveItemID="projects" extraClass="lg:!max-w-[1100px]">
+  <div class="mb-6"> <!-- Espaciado inferior para separar la descripción del iframe -->
+    <h2 class="text-2xl font-bold mb-2">Autocorrelación en Series Temporales</h2>
+    <p class="mb-4">Este proyecto explora los conceptos de autocorrelación y comportamiento estacional en diversas series temporales mediante análisis gráfico y matemático, utilizando datos de múltiples fuentes y aplicando técnicas de visualización avanzada para la identificación de patrones de dependencia temporal.</p>
+
+    <h3 class="text-xl font-semibold">Objetivos y Actividades Principales:</h3>
+    <ul class="list-disc ml-5 mb-4">
+      <li><strong>Exploración de Series Temporales:</strong> Análisis de la columna <em>Beer</em> del archivo <code>aus_producto.csv</code>, observando su comportamiento estacional, cíclico y de tendencia desde el año 2000. Visualización de la serie y patrones de autocorrelación.</li>
+      <li><strong>Análisis de Retardos y Autocorrelación:</strong> Creación de diagramas de dispersión para los valores retrasados en la serie de <em>Beer</em>, visualizando cada trimestre en colores distintos y generando gráficos de los primeros 9 retrasos en una matriz de 3x3 para identificar correlaciones temporales.</li>
+      <li><strong>Diagrama de Autocorrelación:</strong> Cálculo y visualización de los valores de autocorrelación para los retrasos, evaluando tendencias y estacionalidad en los datos, e identificando cómo estos influyen en la predictibilidad de la serie.</li>
+      <li><strong>Análisis del Empleo en EE.UU.:</strong> Filtrado y visualización de la serie temporal de empleo en el sector <em>Retail Trade</em> desde 1980 con el archivo <code>us_employment.csv</code>, y análisis de sus patrones mediante autocorrelación a 48 retrasos.</li>
+      <li><strong>Seguimiento de Acciones:</strong> Estudio de los precios de cierre de las acciones de Google en 2015 con el archivo <code>gafa_stock.csv</code>, y evaluación de la tendencia y estacionalidad mediante análisis de autocorrelación en los primeros 100 retrasos.</li>
+      <li><strong>Análisis de Llegadas Internacionales:</strong> Uso del archivo <code>aus_arrivals.csv</code> para comparar llegadas trimestrales de Japón, Nueva Zelanda, Reino Unido y Estados Unidos a Australia, visualizando series temporales y gráficos estacionales y de subseries para identificar patrones de flujo turístico.</li>
+      <li><strong>Correlación de Series y Gráficos:</strong> Relación entre series de tiempo y sus gráficos de autocorrelación, interpretando patrones temporales a través de la coincidencia visual y analítica de los datos con gráficos específicos.</li>
+    </ul>
+
+    <h3 class="text-xl font-semibold">Tecnologías Utilizadas:</h3>
+    <ul class="list-disc ml-5 mb-4">
+      <li><strong>Python</strong> para la manipulación y análisis de datos temporales y de autocorrelación.</li>
+      <li><strong>Pandas</strong> para la gestión de series temporales y el filtrado avanzado de datos.</li>
+      <li><strong>Matplotlib</strong> y <strong>Seaborn</strong> para la visualización de series temporales y la representación de diagramas de autocorrelación y subseries.</li>
+    </ul>
+
+    <h3 class="text-xl font-semibold">Conclusiones Principales:</h3>
+    <p class="mb-4">El análisis de autocorrelación y retardos en series temporales permite identificar patrones de dependencia temporal y estacionalidad, mejorando la interpretación de tendencias y comportamientos a lo largo de distintos intervalos de tiempo.</p>
+
+    <h3 class="text-xl font-semibold">Aprendizajes Clave:</h3>
+    <p>Este proyecto profundizó en técnicas avanzadas de análisis de autocorrelación en series temporales, proporcionando herramientas para la detección de patrones y dependencias en datos históricos, cruciales para la predicción y el modelado de tendencias futuras.</p>
+  </div>
+
+  <div class="rounded-lg shadow-lg overflow-hidden">
+    <iframe src="/notebooks/Autocorrelacion.html" width="100%" height="790px"></iframe>
+  </div>
+</BaseLayout>

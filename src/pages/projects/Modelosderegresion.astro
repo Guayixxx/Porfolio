@@ -1,0 +1,35 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Modelos de Regresion" sideBarActiveItemID="projects" extraClass="lg:!max-w-[1100px]">
+  <div class="mb-6">
+    <h2 class="text-2xl font-bold mb-2">Análisis Estadístico y Modelado Predictivo para Optimizar Estrategias Publicitarias</h2>
+    <p class="mb-4">Este proyecto tiene como objetivo el desarrollo de un modelo predictivo de Machine Learning que ayude a una empresa de electrodomésticos a maximizar sus ventas optimizando la inversión en medios publicitarios. La empresa proporciona datos de inversión en televisión, radio y periódicos, así como datos de ventas asociadas, para analizar la efectividad de cada canal y mejorar las decisiones de inversión publicitaria.</p>
+
+    <h3 class="text-xl font-semibold">Objetivos y Actividades Principales</h3>
+    <ul class="list-disc ml-5 mb-4">
+      <li><strong>Preparación y Exploración de Datos:</strong> Carga y preparación de los datos, dividiéndolos en conjuntos de entrenamiento y prueba, análisis estadístico de variables, identificación de valores atípicos y exploración de correlaciones.</li>
+      <li><strong>Modelado Predictivo:</strong> Construcción de modelos de regresión individual y combinada para evaluar la efectividad de los canales publicitarios.</li>
+      <li><strong>Evaluación y Selección del Modelo:</strong> Evaluación de modelos usando datos de prueba, comparación de precisión predictiva y selección del modelo óptimo con recomendaciones.</li>
+      <li><strong>Enfoque Estadístico Alternativo:</strong> Generación de un modelo de regresión lineal con `statsmodels` para interpretar la influencia de variables y comparar enfoques.</li>
+    </ul>
+
+    <h3 class="text-xl font-semibold">Conclusiones y Recomendaciones</h3>
+    <p>A través del análisis y modelado, el proyecto ofrece recomendaciones específicas sobre cómo la empresa puede orientar sus esfuerzos publicitarios para obtener un mejor rendimiento de inversión. Se proponen sugerencias para mejorar la calidad de los datos y explorar la posibilidad de agregar relaciones no lineales al modelo para un ajuste más preciso en el futuro.</p>
+
+    <h3 class="text-xl font-semibold">Tecnologías Utilizadas</h3>
+    <ul class="list-disc ml-5 mb-4">
+      <li><strong>Python</strong> para el desarrollo del modelo predictivo y análisis estadístico.</li>
+      <li><strong>Pandas</strong> para el manejo y análisis de datos.</li>
+      <li><strong>Matplotlib</strong> y <strong>Seaborn</strong> para la visualización de datos y resultados de análisis.</li>
+    </ul>
+
+    <h3 class="text-xl font-semibold">Resumen del Proyecto</h3>
+    <p>Este análisis ofrece una guía clara para la toma de decisiones de inversión publicitaria, demostrando cómo el análisis de datos puede aportar insights valiosos y aumentar la rentabilidad empresarial.</p>
+  </div>
+
+  <div class="rounded-lg shadow-lg overflow-hidden">
+    <iframe src="/notebooks/Modelosderegresion.html" width="100%" height="790px"></iframe>
+  </div>
+</BaseLayout>

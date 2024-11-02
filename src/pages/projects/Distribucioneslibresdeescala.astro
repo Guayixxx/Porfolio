@@ -1,0 +1,49 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Distribuciones Libres de Escala" sideBarActiveItemID="projects" extraClass="lg:!max-w-[1100px]">
+  <div class="mb-6"> <!-- Espaciado inferior para separar la descripción del iframe -->
+    <h2 class="text-2xl font-bold mb-2">Procesos Aleatorios y Descomposición de Series Temporales</h2>
+    <p class="mb-4">Este proyecto aborda los conceptos fundamentales de procesos aleatorios y descomposición en series temporales, explorando el comportamiento del ruido blanco, las transformaciones de datos y los métodos de descomposición aditiva y STL en series de tiempo reales. El objetivo es desarrollar una comprensión detallada de los patrones subyacentes y las técnicas de transformación y análisis en datos temporales.</p>
+
+    <h3 class="text-xl font-semibold">Objetivos y Actividades Principales:</h3>
+    <ul class="list-disc ml-5 mb-4">
+      <li><strong>Generación y Análisis de Muestras Aleatorias:</strong> Creación de una muestra aleatoria de una distribución normal estándar para visualizar comportamientos cíclicos y de tendencia en una serie de tiempo simulada.</li>
+      
+      <li><strong>Autocorrelación y Ruido Blanco:</strong> Cálculo de la autocorrelación para los primeros 100 retrasos y análisis de la naturaleza del ruido blanco Gaussiano, con una discusión sobre procesos aleatorios en series temporales.</li>
+
+      <li><strong>Análisis de Datos Reales:</strong> Filtrado y transformación de datos del archivo <code>aus_livestock.csv</code> para estudiar la serie temporal de cerdos sacrificados en Victoria, evaluando autocorrelaciones y visualizando patrones estacionales y de tendencia.</li>
+
+      <li><strong>Comparación de Autocorrelación y Autocorrelación Parcial:</strong> Consulta de las diferencias entre ambas funciones y análisis de sus ventajas y desventajas en el estudio de la dependencia temporal.</li>
+
+      <li><strong>Transformaciones de Series Temporales:</strong> Análisis de la industria alimentaria en Australia a partir del archivo <code>aus_retail.csv</code>, aplicando transformaciones de raíz cuadrada y logaritmo para observar cambios en los datos y sus ventajas para el modelado de series temporales.</li>
+
+      <li><strong>Transformación de Box-Cox:</strong> Estudio y aplicación de la transformación de Box-Cox a la serie de retail, comparando los resultados con otras transformaciones y evaluando su utilidad en el análisis de series temporales.</li>
+
+      <li><strong>Evaluación de Tendencias en Empleo en Retail:</strong> Filtrado y visualización de la serie temporal de empleo en el sector <em>Retail Trade</em> en EE.UU. desde 1990 para identificar tendencias, comportamientos cíclicos y estacionales.</li>
+
+      <li><strong>Descomposición de Series Temporales:</strong> Explicación de la descomposición aditiva y multiplicativa con ejemplos, incluyendo el rol de los residuos en la descomposición y los comportamientos esperados.</li>
+
+      <li><strong>Descomposición Clásica y STL:</strong> Uso de <code>seasonal_decompose()</code> para una descomposición aditiva de la serie de cerdos sacrificados, comparando los componentes visuales con la inspección inicial. Además, exploración de la descomposición STL, evaluando sus ventajas y desventajas respecto al método clásico.</li>
+    </ul>
+
+    <h3 class="text-xl font-semibold">Tecnologías Utilizadas:</h3>
+    <ul class="list-disc ml-5 mb-4">
+      <li><strong>Python</strong> para manipulación y análisis de series temporales.</li>
+      <li><strong>Pandas</strong> para la gestión y filtrado avanzado de datos.</li>
+      <li><strong>Statmodels</strong> para el análisis de autocorrelación, descomposición clásica y STL en series temporales.</li>
+      <li><strong>Matplotlib</strong> y <strong>Seaborn</strong> para la visualización de series temporales y la representación de componentes de descomposición.</li>
+    </ul>
+
+    <h3 class="text-xl font-semibold">Conclusiones Principales:</h3>
+    <p class="mb-4">Este proyecto permitió profundizar en los procesos de análisis de series temporales, especialmente en el tratamiento de datos a través de transformaciones, la comprensión de procesos aleatorios y la descomposición de componentes, proporcionando herramientas para el modelado y la interpretación de patrones complejos en datos temporales.</p>
+
+    <h3 class="text-xl font-semibold">Aprendizajes Clave:</h3>
+    <p>Se obtuvo experiencia en la aplicación de técnicas de autocorrelación, transformación y descomposición de series temporales, fundamentales para el análisis de patrones cíclicos, estacionales y tendencias en datos históricos y su uso en predicciones futuras.</p>
+  </div>
+
+  <div class="rounded-lg shadow-lg overflow-hidden">
+    <iframe src="/notebooks/Distribucioneslibresdeescala.html" width="100%" height="790px"></iframe>
+  </div>
+</BaseLayout>
